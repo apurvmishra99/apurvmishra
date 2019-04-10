@@ -1,0 +1,38 @@
+// GLOBAL DYNAMIC PROPERTIES (THEMING)
+
+:root {
+    --bg-color: #{$bg-color};
+    --bg-color-semitransparent: #{$bg-color-semitransparent};
+    --bg-color-secondary: #{$bg-color-secondary};
+    --text-color: #{$text-color};
+    --text-color-secondary: #{$text-color-secondary};
+    --border-color: #{$border-color};
+    --brand-color-primary: #{$brand-color-primary};
+    --brand-color-primary-offset: #{$brand-color-primary-offset};
+    --brand-color-secondary: #{$brand-color-secondary};
+    --header-border-color: #{$header-border-color};
+}
+
+// Dark Color Scheme
+@mixin dark-color-scheme() {
+    --bg-color: #1d1f21;
+    --bg-color-semitransparent: rgba(33, 33, 33, 0.75);
+    --bg-color-secondary: #252526;
+    --text-color: #e8dbdb;
+    --text-color-secondary: #818a91;
+    --border-color: #2d2d2d;
+    --brand-color-primary: #{darken($brand-red, 4%)};
+    --brand-color-primary-offset: #{darken($brand-red, 8%)};
+    --brand-color-secondary: #{$brand-cyan};
+    --header-border-color: #55595c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include dark-color-scheme();
+    }
+}
+
+.theme-dark {
+    @include dark-color-scheme();
+}

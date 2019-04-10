@@ -1,0 +1,19 @@
+{
+    "name": "Apurv Mishra",
+    "email": "me@apurvmishra.xyz",
+    "avatar": "/assets/images/avatar.jpg",
+    "social": {
+        "twitter": {
+            "name": "apurvmishra",
+            "url": "https://twitter.com/apurv_mishra99"
+        },
+        "github": {
+            "name": "apurvmishra99",
+            "url": "https://github.com/apurvmishra99"
+        },
+        "linkedin": {
+            "name": "apurvmishra",
+            "url": "https://linkedin.com/in/apurv-mishra/"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.sr-only {
+    @include sr-only();
+}
+
+.sr-only-focusable {
+    @include sr-only-focusable();
+}
+
+.sr-skip-link {
+    @include sr-only();
+    @include sr-only-focusable();
+
+    &:focus {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        font-size: 1rem;
+        transform: translateX(-50%);
+        background-color: $gray-darkest;
+        color: #fff;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+.u-align-center {
+    text-align: center !important;
+}
+.u-align-right {
+    text-align: right !important;
+}

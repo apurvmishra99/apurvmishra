@@ -1,0 +1,47 @@
+<footer class="footer h-card" role="contentinfo">
+    <div class="footer__inner container">
+
+        <div hidden>
+            <img class="u-photo" src="{{ author.avatar | url | absoluteUrl(site.url) }}" />
+            <p class="p-note">{{ site.description }}</p>
+        </div>
+
+        <p class="footer__item">
+            <strong>&copy; {{ build.timestamp | format('yyyy') }}</strong><br />
+            <a class="p-name u-url" rel="me" href="{{ site.url }}">{{ author.name }}</a>
+        </p>
+
+        <p class="footer__item">
+            <strong>Contact</strong><br />
+            <a
+                href="mailto:{{ author.email | obfuscate | safe }}"
+                rel="me"
+                class="u-email"
+            >
+                {{ author.email | obfuscate | safe }}
+            </a>
+        </p>
+
+        <p class="footer__item">
+            <strong>Social</strong><br />
+            <a href="{{ author.social.twitter.url }}" title="Twitter" rel="me">Twitter</a> /
+            <a href="{{ author.social.github.url }}" title="Github" rel="me">Github</a>
+        </p>
+
+        <p class="footer__item">
+            <strong>Legal</strong><br />
+            <a href="/privacy/">Privacy Policy</a> /
+            <a href="/imprint/">Imprint</a>
+        </p>
+
+        <p class="footer__item footer__item--right">
+            <a href="{{ site.repo }}/tree/master/{{ page.inputPath }}" class="footer__icon" title="Edit this page on Github">
+                {% icon "github" %}
+            </a>
+            <a href="{{ "/feed.xml" | url }}" class="footer__icon" title="Atom Feed">
+                {% icon "feed" %}
+            </a>
+        </p>
+
+    </div>
+</footer>

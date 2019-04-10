@@ -1,0 +1,142 @@
+.note {
+    @include container-narrow;
+    position: relative;
+    min-height: 100px;
+    border: 1px solid $border-color;
+    border: 1px solid var(--border-color);
+    background-color: $bg-color;
+    background-color: var(--bg-color);
+
+    &--detail {
+        margin: 2rem auto 4rem;
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem 0.5rem 1rem;
+
+        &__divider {
+            display: inline-block;
+            padding: 0 0.125rem;
+        }
+    }
+    &__date {
+        color: $text-color-secondary;
+        color: var(--text-color-secondary);
+    }
+    &__author {
+        margin: 0;
+
+        &__link {
+            display: flex;
+            align-items: center;
+            color: inherit;
+        }
+
+        &__photo {
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+        }
+    }
+    &__content {
+        padding: 0 1rem 1rem;
+
+        a {
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        p:last-child,
+        img:last-child {
+            margin: 0 !important;
+        }
+    }
+    &__stats {
+        display: flex;
+        color: $text-color-secondary;
+        color: var(--text-color-secondary);
+        font-size: 0.875rem;
+        padding: 1rem;
+        background-color: $bg-color-secondary;
+        background-color: var(--bg-color-secondary);
+        border-top: 1px solid $border-color;
+        border-top: 1px solid var(--border-color);
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+
+            .icon {
+                margin-right: 0.25rem;
+            }
+        }
+    }
+    &__link {
+        @include coverall;
+        border-radius: 6px;
+        box-shadow: none;
+        transition: box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+        }
+    }
+    &__webmentions {
+        padding: 1rem;
+        border-top: 1px solid $border-color;
+        border-top: 1px solid var(--border-color);
+
+        .webmentions__item {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    @include mq(md) {
+        border-radius: 6px;
+
+        &__meta {
+            padding-left: 5rem;
+            margin-bottom: 0;
+        }
+        &__content,
+        &__stats {
+            padding-left: 5rem;
+        }
+        &__author__photo {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+    }
+}
+
+.notelist {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: $border-color;
+        background-color: var(--border-color);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 2.5rem;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

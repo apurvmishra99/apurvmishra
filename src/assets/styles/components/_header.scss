@@ -1,0 +1,30 @@
+.header {
+    border-top: 5px solid $header-border-color;
+    border-top: 5px solid var(--header-border-color);
+    padding: 2rem 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__brand {
+        display: block;
+        position: relative;
+        width: 5rem;
+        height: 1.75rem; // IE11 compat
+
+        svg {
+            width: 100%;
+            height: auto;
+            vertical-align: bottom;
+            fill: $text-color;
+            fill: var(--text-color);
+        }
+    }
+
+    @include mq(md) {
+        padding: 3.125rem 0;
+    }
+}

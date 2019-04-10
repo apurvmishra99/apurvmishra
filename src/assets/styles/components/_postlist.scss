@@ -1,0 +1,53 @@
+.postlist {
+    @include container-narrow;
+
+    &__item {
+        margin-bottom: 3rem;
+
+        @include mq(md) {
+            margin-bottom: 5rem;
+        }
+    }
+    &__link {
+        display: block;
+        color: inherit;
+
+        @include hover-focus {
+            color: inherit;
+        }
+    }
+    &__title {
+        margin-bottom: 0.25rem;
+        color: $brand-color-primary;
+        color: var(--brand-color-primary);
+
+        .postlist__item--draft & {
+            color: $brand-color-secondary;
+            color: var(--brand-color-secondary);
+        }
+    }
+    &__meta {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+        color: $text-color-secondary;
+        color: var(--text-color-secondary);
+    }
+    &__tags {
+        font-family: $font-family-serif;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        letter-spacing: 3px;
+    }
+    &__status {
+        font-weight: 700;
+        color: $brand-color-secondary;
+        color: var(--brand-color-secondary);
+    }
+    &__excerpt {
+        @include body-text();
+
+        .postlist__item--draft & {
+            opacity: 0.5;
+        }
+    }
+}
