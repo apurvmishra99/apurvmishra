@@ -1,7 +1,7 @@
 [build]
     command = "yarn run build"
     publish = "dist"
-	functions = "functions"
+	functions = "_lambda"
 [build.environment]
     NODE_VERSION = "8.9.4"
 
