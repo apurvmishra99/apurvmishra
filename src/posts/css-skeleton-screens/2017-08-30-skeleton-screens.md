@@ -155,7 +155,7 @@ Here's a full example of how the finished skeleton card could look:
 
 <div class="extend">
   <p data-height="450" data-theme-id="dark" data-slug-hash="EvmLVp" data-default-tab="css,result" data-user="mxbck" data-embed-version="2" data-pen-title="Skeleton Loading Card" class="codepen">
-  <a href="https://codepen.io/mxbck/pen/EvmLVp/">Skeleton Loading Card</a> by Max Böck (<a href="https://codepen.io/mxbck">@mxbck</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  <a href="https://codepen.io/mxbck/pen/EvmLVp/">Skeleton Loading Card</a> by Apurv Mishra (<a href="https://codepen.io/mxbck">@mxbck</a>) on <a href="https://codepen.io">CodePen</a>.</p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 

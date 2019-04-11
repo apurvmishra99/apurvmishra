@@ -7,10 +7,11 @@ subtitle: Legal Information and Stuff.
 
 ## Content Ownership
 
-Maximilian Böck  
-Antonigasse 55  
-A-1170 Vienna  
-Austria  
+Apurv Mishra
+3/8 College Wynd
+203 Cowgate
+Edinburgh
+UK
 
 <a href="mailto:{{ author.email | obfuscate | safe }}">{{ author.email | obfuscate | safe }}</a>
 

@@ -1,10 +1,10 @@
 # apurvmishra.xyz
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57999461-2350-4da3-8788-ca4e0e6dcb30/deploy-status)](https://app.netlify.com/sites/mxb/deploys)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f7f868c7-d54d-4dfe-91be-75237ee0cecb/deploy-status)](https://app.netlify.com/sites/apurvmishra/deploys)
 
 Source code for [apurvmishra.xyz](apurvmishra.xyz), my personal website.  
 
-This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous Jekyll-based site, that repo has moved to [https://github.com/maxboeck/mxb-jekyll](https://github.com/maxboeck/mxb-jekyll)
+This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous site, that repo is here [https://github.com/apurvmishra99/apurvmishra99.github.io](https://github.com/apurvmishra99/apurvmishra99.github.io)
 
 ## Features
 

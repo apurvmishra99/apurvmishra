@@ -167,7 +167,7 @@ const publishNote = async note => {
 
 Hopefully that all worked, and you should end up with something like this in your timeline:
 
-<blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">I did some housekeeping over the holidays and switched my website to <a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> and <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> !<br><br>👉 <a href="https://t.co/oq0OyPyjRs">https://t.co/oq0OyPyjRs</a></p>&mdash; Max Böck (@mxbck) <a href="https://twitter.com/mxbck/status/1081178633513910272?ref_src=twsrc%5Etfw">January 4, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">I did some housekeeping over the holidays and switched my website to <a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> and <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> !<br><br>👉 <a href="https://t.co/oq0OyPyjRs">https://t.co/oq0OyPyjRs</a></p>&mdash; Apurv Mishra (@mxbck) <a href="https://twitter.com/mxbck/status/1081178633513910272?ref_src=twsrc%5Etfw">January 4, 2019</a></blockquote>
 
 🎉 You can find the [finished lambda function](https://github.com/maxboeck/mxb/blob/master/_lambda/deploy-succeeded.js) along with the rest of the source code for this site on Github.
 

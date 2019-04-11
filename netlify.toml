@@ -14,14 +14,6 @@
         X-Content-Type-Options = "nosniff"
         Referrer-Policy= "no-referrer-when-downgrade"
 
-# Netlify subdomain
-[[redirects]]
-    from = "https://apurvmishra.netlify.com/*"
-    to = "https://apurvmishra.xyz/:splat"
-    status = 301
-    force = true
-
-
 # 404s
 [[redirects]]
     from = "*"

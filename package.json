@@ -1,20 +1,18 @@
 {
-  "name": "mxb.dev",
+  "name": "apurvmishra.xyz",
   "version": "4.1.0",
-  "description": "Personal Website of Max Böck",
+  "description": "Personal Website of Apurv Mishra",
   "scripts": {
     "start": "gulp build:dev && yarn run serve",
-    "build": "NODE_ENV=prod gulp build && yarn run build:lambda",
+    "build": "NODE_ENV=prod gulp build",
     "debug": "DEBUG=Eleventy* yarn start",
-    "serve": "gulp serve",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/mxb"
+    "url": "http://github.com/apurvmihra99/apurvmishra"
   },
-  "author": "Max Böck",
+  "author": "Apurv Mishra",
   "license": "MIT",
   "browserslist": [
     "> 0.25%",
