@@ -4,9 +4,11 @@
   "description": "Personal Website of Apurv Mishra",
   "scripts": {
     "start": "gulp build:dev && yarn run serve",
-    "build": "NODE_ENV=prod gulp build",
+    "build": "NODE_ENV=prod gulp build && yarn run build:lambda",
     "debug": "DEBUG=Eleventy* yarn start",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "serve:lambda": "netlify-lambda serve _lambda",
+    "build:lambda": "netlify-lambda build _lambda"
   },
   "repository": {
     "type": "git",
