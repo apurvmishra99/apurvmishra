@@ -34,10 +34,11 @@ If your personal data was published in a webmention, you may at any time demand 
 
 ## Responsible Data Controller
 
-__Maximilian Böck__  
-Antonigasse 55  
-A-1170 Vienna  
-Austria
+__Apurv Mishra__  
+3/8 College Wynd
+203 Cowgate
+Edinburgh
+UK
 
 If you have any questions or concerns about this,  
 please contact me at <a href="mailto:{{ author.email | obfuscate | safe }}">{{ author.email | obfuscate | safe }}</a>

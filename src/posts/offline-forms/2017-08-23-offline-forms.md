@@ -147,6 +147,6 @@ If you dont want to use ajax to send your form submission, another solution woul
 If you're interested, check out the full example on CodePen:
 
 <div class="extend" id="codepen-demo">
-  <p data-height="450" data-theme-id="dark" data-slug-hash="ayYGGO" data-default-tab="js,result" data-user="mxbck" data-embed-version="2" data-pen-title="Offline Form" class="codepen"><a href="https://codepen.io/mxbck/pen/ayYGGO/">Offline Form</a> by Max Böck on CodePen.</p>
+  <p data-height="450" data-theme-id="dark" data-slug-hash="ayYGGO" data-default-tab="js,result" data-user="mxbck" data-embed-version="2" data-pen-title="Offline Form" class="codepen"><a href="https://codepen.io/mxbck/pen/ayYGGO/">Offline Form</a> by Apurv Mishra on CodePen.</p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
