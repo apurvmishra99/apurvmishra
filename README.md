@@ -4,7 +4,7 @@
 
 Source code for [apurvmishra.xyz](apurvmishra.xyz), my personal website.  
 
-This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous site, that repo is here [https://github.com/apurvmishra99/apurvmishra99.github.io](https://github.com/apurvmishra99/apurvmishra99.github.io)
+This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous site, that repo is [here](https://github.com/apurvmishra99/apurvmishra99.github.io)
 
 ## Features
 
@@ -33,3 +33,5 @@ The most important commands can be run as npm scripts:
 `npm run debug`: start Eleventy in debug mode and serve the site  
 `npm run serve:lambda`: serve lambda functions with netlify-lambda  
 `npm run build:lambda`: compile lambda functions for production  
+
+**Credits: [Max Boeck](https://mxb.dev)
