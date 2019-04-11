@@ -1,86 +1,56 @@
 ==================================================================
-https://keybase.io/mxb
+https://keybase.io/apurvmishra
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of https://mxb.dev
-  * I am mxb (https://keybase.io/mxb) on keybase.
-  * I have a public key with fingerprint 2D6B F9EA CA44 6DD6 4A4E  83FF 944E 076E 5FC2 7685
+  * I am an admin of https://apurvmishra.xyz
+  * I am apurvmishra (https://keybase.io/apurvmishra) on keybase.
+  * I have a public key ASBjZc8Zryn9Bqo_yrbSTbjGMSkYweem6aMbbxOAlI6hQgo
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "012034c0d6ac99862a9d6ff22c6fa8930174552325a352180dee9b2752edc83395950a",
-      "fingerprint": "2d6bf9eaca446dd64a4e83ff944e076e5fc27685",
+      "eldest_kid": "01206365cf19af29fd06aa3fcab6d24db8c6312918c1e7a6e9a31b6f1380948ea1420a",
       "host": "keybase.io",
-      "key_id": "944e076e5fc27685",
-      "kid": "010141db038fd0097ed3d80833acb60c611c1618169eb55b7bdd53173dc6f0e740550a",
-      "uid": "cec9401a768b2b9c51df144e3d921f00",
-      "username": "mxb"
+      "kid": "01206365cf19af29fd06aa3fcab6d24db8c6312918c1e7a6e9a31b6f1380948ea1420a",
+      "uid": "54aa40c7fa48d62fc801af0bf66f6f19",
+      "username": "apurvmishra"
     },
     "merkle_root": {
-      "ctime": 1551474619,
-      "hash_meta": "8a77923905cff8432091be2dce36858f8e3cf5b271a3e2cb5dc9bdc6a4c244a0",
-      "seqno": 4859291
-    },
-    "revoke": {
-      "sig_ids": [
-        "bb4216744cfeed833c82fb383535891c3a634e349e62bf68bd3c0c429db2459c0f"
-      ]
+      "ctime": 1554994897,
+      "hash": "b77b86896246428303ed5947919d5ce9c35e6b14fb9aab48f9b14f816d813f7691451f6bf2eff86ef6b28781ad0b857a05fdadefec0a394054adab20070f8124",
+      "hash_meta": "78d064e98c2766da0c34d6c437a9c88914d0f506af54f8706b48f1c17e6bdc58",
+      "seqno": 5144137
     },
     "service": {
-      "hostname": "mxb.dev",
+      "entropy": "9rJYqPzQT/Ia0ydnGNEh9CIo",
+      "hostname": "apurvmishra.xyz",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 1
+    "version": 2
   },
-  "ctime": 1551474627,
-  "expire_in": 157680000,
-  "prev": "dc7132807cb568a3427175bc2c2e75623128e15cab52e55407f3aaddb2bedb3e",
-  "seqno": 26,
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.1"
+  },
+  "ctime": 1554994919,
+  "expire_in": 504576000,
+  "prev": "2452177f98fd605e2f6cc6bf6a889cd1828ddd7fc8139cd96e91f99831d654ce",
+  "seqno": 5,
   "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-
-owFtU3tQFVUYB7QQlHAyEgsp1xFRQXfPYx+3lMbUBPWqRaGi3nbPOctd4N697r1e
-5XHFYpxM0tFBkJqy0aKS0DJrzExRHN8Og2lZE2Xi6JiTpmYkjo/OpRxnms4/O+fb
-3/f9Huec1Um9YhJj17rj/Z7W8LLYo78aMXPL3m2rEAyblgmuCqGE9XxYKWXBkKfE
-ooJLECUgQkREKutE01QZ6BqVTRMAIpu6qkFRUhDGAAKsQwwkVaSMaQZQMGCUqBBq
-WMOiLmQJpuUvYk7AsfwhPhZQ2TA1phMdIZlSGemIqdA0NYSYqMgMmwQosop5o9cO
-Rju4OEMPstGWzWt84+mR9z/4e7pFCUnUEKFqUlHUFEYhVUWuSCeGLBJZkogkS6ok
-a8zA2FAMSjGUFEi5MZEpSMT/6F7YM44woiFR0jmHAQyNYImaEueGVAOSKYpRYJA5
-ft3HONq32BAiWYKPOSWlzOPYdiiaKwlZ0b8SxhJSkCxp3Jse9Hp8LKTzJlVXFA1A
-TcTENFUEgahJBgOUMMiNqabKIDExj1bSIQPEwJRoBlerIwIQ0qMSgmyB3xZcSMUa
-0CSuwGFhu4RFyYNWEU8sKLgKBcNAQJIVhPb4iMkY5ZkQFZgGVCGGWNUkAnUZcm9I
-YzIwTG6ZQiISBDRqAIQ1IprCvEiUzglbpGd89JDumx9NWZjLCTh2yCZ2KS96Q6FA
-0BUNJVQWiKIWMcPzb7/HsPyU3w7eEWZO0LL9PCSO/E9eQMkS2OKA5TCPFUVgfhYi
-X1EeTucSKFEkCFRR4dnIqg4Rj0rBBgEEMAXLAEpAZRImusEvJ8ZIVEyo65R7Mhg1
-ILsfIJC5Tr2Iz+Sx+fXQQocJkcTX42DvmNjEmMGPDumdXdJ98cgE33d57uq7917U
-A3HR5xSTmND/XuXJK8m307+oC7TEXU32bm1yP1KxaX3r3KcXXRmcMGBs27H2ukzf
-9kq3pVUF+ryd273lofalez9+bOjW+CkrNtTlN9TO6+z712uNN5dWPThseWR265kR
-r5Qf7XUk5+U1l3N3rcu+VZ2R1uW6MPV0gVIXnzH+2jN2zrbG9Mdd74zx35jcJ+4G
-e8Ldb2/372NT3c93Ffw4dVr/NXvv7oxMT3LK42em/Ybzm5sONEM7eXZWY9HBGRs3
-Lu43c/K1AufQiI6+68e1f5+RmdmQfbJrYHfhyT+DkdlybcWpqzsm7g9fHjbOlTPs
-eHp59eG0i3PKmmdcP5/wPn1wwvybCw7nL/l6XMoPKxOqbpraJ2lXUs/5yjPqp/ar
-mWQFCy5/lJF3buTnpXdW55yYN3zh6aSWTb/cfaqieltyU2dXx5fF89N+avh2V4G6
-uTO5c3k4tqZlKH2pOVybX3DquaRVq3Jr3khfi6YLA75aJy8qG7jnQu7+jrm5P0uV
-o87vrp1yNnXlkuQNtdnhi9frIzvunBkUzr90IHR88OTms5Pos7nvlRR+4N3Hiva1
-Fk/cvHNkYXnt+d1l45vuTPhDrj5467PuYnXLzhNjpn1ztPtSXqxcPGsryExtmzW2
-5sNRx5JGrTukvNqxunHZw/Wq9y38ZsuelXPahqd0ySmw8nZDVZ09RHG/6M3v/emK
-S9sTQVt9+wvjnYRbM65Vxtp40Ky86SlFfwM=
-=p87E
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgY2XPGa8p/QaqP8q20k24xjEpGMHnpumjG28TgJSOoUIKp3BheWxvYWTESpcCBcQgJFIXf5j9YF4vbMa/aoic0YKN3X/IE5zZbpH5mDHWVM7EIIWOXrfb8K8HWVYS7SAYeauXlgzhYGGyScfwcetMeWeMAgHCo3NpZ8RA2scLJpE/tOsc1x7AfQ6+JiNgNl2J8VX44gMtyqmfkWxxqGVvOT1A6iUzgCqC0UpzKp2acOhkvtkj2tWJn8UcBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL0NzZ9R62WRVO401xvuHRprZK4nrV792HniW06Oo4EQo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/mxb
+View my publicly-auditable identity here: https://keybase.io/apurvmishra
 
 ==================================================================
