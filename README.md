@@ -34,4 +34,4 @@ The most important commands can be run as npm scripts:
 `npm run serve:lambda`: serve lambda functions with netlify-lambda  
 `npm run build:lambda`: compile lambda functions for production  
 
-**Credits: [Max Boeck](https://mxb.dev)
+##### Original Template Credits: [Max Boeck](https://mxb.dev)
