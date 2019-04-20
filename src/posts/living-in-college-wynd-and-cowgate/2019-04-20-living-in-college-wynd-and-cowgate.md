@@ -45,42 +45,42 @@ There might be somethings that I maybe forgetting right now so I will keep addin
 ## Gallery
 
 <div class="extend"><figure>
-    <img src="{{ 'bed.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'bed.jpg' | media(page) }" alt="" />
     <figcaption>
         The standard bed you are provided with.
     </figcaption>
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'bed-study-table.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'bed-study-table.jpg' | media(page) }" alt="" />
     <figcaption>
         Huge study table with a comfy chair.
     </figcaption>
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'view-window.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'view-window.jpg' | media(page) }" alt="" />
     <figcaption>
         My window overlooking cowgate.
     </figcaption>
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'view-window-up.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'view-window-up.jpg' | media(page) }" alt="" />
     <figcaption>
         Every place is always uphill from cowgate.
     </figcaption>
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'kitchen.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'kitchen.jpg' | media(page) }" alt="" />
     <figcaption>
         A cozy kitchen where you can relax and talk with your flatmates.
     </figcaption>
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'kitchen-sofa.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'kitchen-sofa.jpg' | media(page) }" alt="" />
     <figcaption>
         I have spent too much time on these sofas.
     </figcaption>
@@ -94,7 +94,7 @@ There might be somethings that I maybe forgetting right now so I will keep addin
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'first-meal.jpg' | media(page) }}" alt="" />
+    <img src="{{ 'first-meal.jpg' | media(page) }" alt="" />
     <figcaption>
         First Indian meal I cooked for myself, a big personal milestone for me.
     </figcaption>
