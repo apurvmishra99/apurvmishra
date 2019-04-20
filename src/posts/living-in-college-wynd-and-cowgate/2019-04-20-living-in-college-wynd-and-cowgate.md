@@ -68,7 +68,7 @@ There might be somethings that I maybe forgetting right now so I will keep addin
 <div class="extend"><figure>
     <img src="{{ 'view-window-up.jpg' | media(page) }}" alt="" />
     <figcaption>
-        Everyplace is always uphill from cowgate.
+        Every place is always uphill from cowgate.
     </figcaption>
 </figure></div>
 
