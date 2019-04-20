@@ -3,6 +3,10 @@
     "email": "me@apurvmishra.xyz",
     "avatar": "/assets/images/avatar.jpg",
     "social": {
+    	"facebook": {
+    		"name": "apurv.mishra.332",
+    		"url": "https://www.facebook.com/apurv.mishra.332"
+    		},
         "twitter": {
             "name": "apurvmishra",
             "url": "https://twitter.com/apurv_mishra99"
