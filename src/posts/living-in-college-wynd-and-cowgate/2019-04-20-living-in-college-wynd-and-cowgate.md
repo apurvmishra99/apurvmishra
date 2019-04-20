@@ -8,7 +8,6 @@ description: 'My first year uni accommodation, College Wynd 203 Cowgate'
 
 When I submitted my application for student accommodation in Edinburgh I knew nothing about the places I was applying to. Random names, different prices, catered vs self-catered, et cetera all confused me as an international student who had never been to the UK before. The only two things I wanted were to live near the University and not spend too much money. Keeping these two in mind, I applied to the five cheapest student accommodations around George Square, with College Wynd being my first choice.
 
-
 ## Why you should choose College Wynd?
 
 1. It takes me 3 minutes to reach the Geroge Square campus where all first year lectures are generally held.
@@ -38,63 +37,65 @@ Despite all the great advantges listed above, there are some clear problems livi
 ## Final thoughts
 
 It was honestly a great experience for me to live in College Wynd this year. I met some wonderful people in my flatmates, had fun times on Cowgate, was able to sleep till much later times before lectures compared to my friends, explore Edinburgh as a tourist, and most importantly learn to cook!
+
 ***
 There might be somethings that I maybe forgetting right now so I will keep adding them later. If you have ay questions or want to know more you can contact me through email or any of the any Social media platforms given below. I hope you all have a great time here in Edinburgh.
 ***
 
 ## Gallery
-<figure>
+
+<div class="extend"><figure>
     <img src="{{ 'bed.jpg' | media(page) }" alt="" />
     <figcaption>
-        The standard bed you are provided with. 
+        The standard bed you are provided with.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'bed-study-table.jpg' | media(page) }" alt="" />
     <figcaption>
         Huge study table with a comfy chair.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'view-window.jpg' | media(page) }" alt="" />
     <figcaption>
         My window overlooking cowgate.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'view-window-up.jpg' | media(page) }" alt="" />
     <figcaption>
         Everyplace is always uphill from cowgate.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'kitchen.jpg' | media(page) }" alt="" />
     <figcaption>
         A cozy kitchen where you can relax and talk with your flatmates.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'kitchen-sofa.jpg' | media(page) }" alt="" />
     <figcaption>
         I have spent too much time on these sofas.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'shelf-soft-board.jpg' | media(page) }" alt="" />
     <figcaption>
-        Small shrine on the shelf, along with books, food and medicine.Also the soft board which is pretty much empty. 
+        Small shrine on the shelf, along with books, food and medicine.Also the soft board which is pretty much empty.
     </figcaption>
-</figure>
+</figure></div>
 
-<figure>
+<div class="extend"><figure>
     <img src="{{ 'first-meal.jpg' | media(page) }" alt="" />
     <figcaption>
         First Indian meal I cooked for myself, a big personal milestone for me.
     </figcaption>
-</figure>
+</figure></div>
