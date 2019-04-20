@@ -1,10 +1,10 @@
 ---
-title: Livng in College Wynd and Cowgate
+title: Living in College Wynd and Cowgate
 tags: ["life", "college wynd", "edinburgh"]
 image: "{{ leith1.jpg }}"
 description: 'My experience at my first year accommodation, College Wynd'
 ---
-<p class='lead'> I chose to stay at College Wynd for my first year at The Univrsity of Edinburgh, and to say the least it was great fun.</p>
+<p class='lead'> I chose to stay at College Wynd for my first year at The University of Edinburgh, and to say the least it was great fun.</p>
 
 When I submitted my application for student accommodation in Edinburgh I knew nothing about the places I was applying to. Random names, different prices, catered vs self-catered, et cetera all confused me as an international student who had never been to the UK before. The only two things I wanted were to live near the University and not spend too much money. Keeping these two in mind, I applied to the five cheapest student accommodations around George Square, with College Wynd being my first choice.
 
