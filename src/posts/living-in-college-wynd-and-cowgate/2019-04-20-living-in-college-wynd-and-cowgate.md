@@ -87,7 +87,7 @@ There might be somethings that I maybe forgetting right now so I will keep addin
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'shelf-notice-board.jpg' | media(page) }}}}" alt="" />
+    <img src="{{ 'shelf-notice-board.jpg' | media(page) }}" alt="" />
     <figcaption>
         Small shrine on the shelf, along with books, food and medicine.Also the soft board which is pretty much empty.
     </figcaption>
