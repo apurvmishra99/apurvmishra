@@ -39,7 +39,7 @@ When I submitted my application for student accommodation in Edinburgh I knew no
 It was honestly a great experience for me to live in College Wynd this year. I met some wonderful people in my flatmates, had fun times on Cowgate, was able to sleep till much later times before lectures compared to my friends, explore Edinburgh as a tourist, and most importantly learn to cook!
 
 ***
-There might be somethings that I maybe forgetting right now so I will keep adding them later. If you have ay questions or want to know more you can contact me through email or any of the any Social media platforms given below. I hope you all have a great time here in Edinburgh.
+There might be somethings that I maybe forgetting right now so I will keep adding them later. If you have any questions or want to know more you can contact me through email or any of the Social media platforms given below. I hope you all have a great time here in Edinburgh.
 ***
 
 ## Gallery
