@@ -16,11 +16,11 @@ When I submitted my application for student accommodation in Edinburgh I knew no
 
 - You are right in the heart of the city, everything you want is in a 10 min walking range from supermarket, restaurants, pubs, clubs, landmarks, libraries and so on.
 
-- Rooms are reasonably sized, not massive, no extra facilities but enough for you to happily stay for an year.
+- Rooms are reasonably sized, not massive, no extra facilities but enough for you to happily stay for a year.
 
 - Your flatmates can be from all over the world, I was pleasently surprised with the diverse group of nations,represented in College Wynd. In own my flat we had India, Poland, USA, England & Scotland represented.
 
-- Cowgate in general is a **party** street. That means you can a very crazy nightlife but still reach lectures on time because you are so close to everywhere.
+- Cowgate in general is a **party** street. That means you can have a very crazy nightlife but still reach lectures on time because you are so close to everywhere.
 
 *Despite all the great advantges listed above, there are some clear problems living in College Wynd or on Cowgate in general.*
 
@@ -32,7 +32,7 @@ When I submitted my application for student accommodation in Edinburgh I knew no
 
 - The lack of an exclusive common room is probably one of the reasons people don't form bigger social circles here in College Wynd. We share a common room with Kincaid's Court however it is located in their premises and we don't have keys for them. Hence you will always have to ask someone to let you in. On this point, I genuinely think Kincaid's Court would be thief's dream because the residents there let you in without ever asking anything.
 
-- Probably the biggest issue residents face here is **noise**. This is the directly caused by living on a party street. Despite my flat being on the third floor, it feels like I can hear every single thing being said or sung below my window every night. This happens every night till atleast 3:30 am. I honestly got used to this noise over a period of a month and it became like a lullaby for me. However many people continue to struggle with it, so your mileage may vary. It helps having a 24/7 library five minutes from you, so your studies do not suffer.
+- Probably the biggest issue residents face here is **noise**. This is directly caused by living on a party street. Despite my flat being on the third floor, it feels like I can hear every single thing being said or sung below my window every night. This happens every night till atleast 3:30 am. I honestly got used to this noise over a period of a month and it became like a lullaby for me. However many people continue to struggle with it, so your mileage may vary. It helps having a 24/7 library five minutes from you, so your studies do not suffer.
 
 ## Final thoughts
 
