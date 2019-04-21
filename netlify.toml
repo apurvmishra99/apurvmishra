@@ -12,6 +12,9 @@
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
         Referrer-Policy= "no-referrer-when-downgrade"
+[[redirects]]
+  from = "/blog/livng-in-college-wynd-and-cowgate"
+  to = "/blog/living-in-college-wynd-and-cowgate"
 
 # 404s
 [[redirects]]
