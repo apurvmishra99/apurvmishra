@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f7f868c7-d54d-4dfe-91be-75237ee0cecb/deploy-status)](https://app.netlify.com/sites/apurvmishra/deploys)
 
-Source code for [apurvmishra.xyz](apurvmishra.xyz), my personal website.  
+Source code for [apurvmishra.xyz](https://apurvmishra.xyz), my personal website.  
 
 This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous site, that repo is [here](https://github.com/apurvmishra99/apurvmishra99.github.io)
 
