@@ -71,7 +71,7 @@ In the next part I will cover Introduction to Linear Algebra.
 </figure></div>
 
 <div class="extend"><figure>
-    <img src="{{ 'ATNightOutisde.jpg' | media(page) }}" alt="ATOutside" />
+    <img src="{{ 'ATNightOutside.jpg' | media(page) }}" alt="ATOutside" />
     <figcaption>
         At similar hours the scene outside the building.
     </figcaption>
