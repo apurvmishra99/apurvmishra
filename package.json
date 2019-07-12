@@ -24,7 +24,7 @@
     "esm": "^3.2.25",
     "focus-visible": "^4.1.5",
     "infinite-scroll": "^3.0.5",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.13",
     "markdown-it-anchor": "^5.0.2",
     "preact": "^8.4.2",
     "svgxuse": "^1.2.6"
