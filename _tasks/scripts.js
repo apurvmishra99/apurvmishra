@@ -34,7 +34,7 @@ const webpackConfig = {
     }
 }
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
     return gulp
         .src(config.assetSrc + '/scripts/main.js')
         .pipe(webpack(webpackConfig))
