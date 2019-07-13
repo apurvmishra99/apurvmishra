@@ -12,7 +12,7 @@
         <title>{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
         <link rel="preload" href="{{ '/assets/fonts/noe-display-regular.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 
-        {% if build.env == 'dev' %}
+        {% if build.env !== 'production' %}
             <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
         {% else %}
             <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | url }}">
@@ -41,9 +41,12 @@
             </main>
 
             {% include "footer.njk" %}
-        </div>
 
-        {% if build.env == 'dev' %}<script>window.env = 'dev';</script>{% endif %}
+            {% if backgroundPattern %}
+                {%- set patternUrl -%}/assets/images/patterns/{{ backgroundPattern }}{%- endset -%}
+                <div class="background-pattern" style="background-image: url({{ patternUrl | url }});"></div>
+            {% endif %}
+        </div>
 
         {# Main JS Bundle #}
         <script src="{{ '/assets/js/main.min.js' | url }}" defer></script>

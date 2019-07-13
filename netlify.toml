@@ -21,3 +21,9 @@
     from = "*"
     to = "/404"
     status = 404
+
+# Favicon
+[[redirects]]
+    from = "/assets/images/touch/*"
+    to = "/assets/images/favicon/:splat"
+status = 301

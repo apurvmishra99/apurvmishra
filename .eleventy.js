@@ -1,3 +1,4 @@
+
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const htmlmin = require('html-minifier')
@@ -8,7 +9,7 @@ const filters = require('./_eleventy/filters.js')
 const shortcodes = require('./_eleventy/shortcodes.js')
 
 require('dotenv').config()
-const isProduction = process.env.NODE_ENV === 'prod'
+const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = function(config) {
     // Filters
@@ -33,7 +34,11 @@ module.exports = function(config) {
 
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
+    config.addPassthroughCopy('src/keybase.txt')
     config.addPassthroughCopy('src/robots.txt')
+    config.addPassthroughCopy('src/favicon.ico')
+    config.addPassthroughCopy('src/assets/images')
+    config.addPassthroughCopy('src/assets/fonts')
 
     // Markdown Parsing
     config.setLibrary(
@@ -46,6 +51,7 @@ module.exports = function(config) {
             permalink: true,
             permalinkSymbol: '#',
             permalinkClass: 'heading-anchor',
+            permalinkBefore: true,
             level: 2,
             slugify: s =>
                 encodeURIComponent(
@@ -96,7 +102,8 @@ module.exports = function(config) {
         return content
     })
 
-    // opt out of using gitignore for eleventy
+    // opt out of using gitignore for eleventy,
+    // because the drafts folder is ignored, but should still be processed.
     config.setUseGitIgnore(false)
 
     // Base Config

@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const sanitizeHTML = require('sanitize-html')
+const random = require('lodash/random')
 
 module.exports = {
     format: function(date, format) {
@@ -13,8 +14,8 @@ module.exports = {
         })
     },
 
-    readableDate: function(date) {
-        return DateTime.fromJSDate(date).toFormat('dd LLL yyyy')
+    readableDate: function(date, format = 'dd LLL yyyy') {
+        return DateTime.fromJSDate(date).toFormat(format)
     },
 
     fromIso: function(timestamp) {
@@ -33,6 +34,17 @@ module.exports = {
         return limit > 0 ? array.slice(0, limit) : array.slice(limit)
     },
 
+    isOwnWebmention: function(webmention) {
+        const urls = [
+            'https://mxb.at',
+            'https://mxb.dev',
+            'https://twitter.com/mxbck'
+        ]
+        const authorUrl = webmention.author ? webmention.author.url : false
+        // check if a given URL is part of this site.
+        return authorUrl && urls.includes(authorUrl)
+    },
+
     webmentionsByUrl: function(webmentions, url) {
         const allowedTypes = ['mention-of', 'in-reply-to']
         const allowedHTML = {
@@ -42,12 +54,13 @@ module.exports = {
             }
         }
 
-        const isUrlMatch = entry =>
-            entry['wm-target'] === url ||
-            entry['wm-target'] === url.replace('mxb.dev', 'mxb.at')
-
         const orderByDate = (a, b) =>
             new Date(a.published) - new Date(b.published)
+
+        const checkRequiredFields = entry => {
+            const { author, published, content } = entry
+            return !!author && !!author.name && !!published && !!content
+        }
 
         const clean = entry => {
             const { html, text } = entry.content
@@ -62,16 +75,16 @@ module.exports = {
                 // sanitize HTML
                 entry.content.value = sanitizeHTML(html, allowedHTML)
             } else {
-                entry.content.value = text
+                entry.content.value = sanitizeHTML(text, allowedHTML)
             }
 
             return entry
         }
 
         return webmentions
-            .filter(isUrlMatch)
+            .filter(entry => entry['wm-target'] === url)
             .filter(entry => allowedTypes.includes(entry['wm-property']))
-            .filter(entry => !!entry.content)
+            .filter(checkRequiredFields)
             .sort(orderByDate)
             .map(clean)
     },
@@ -145,5 +158,9 @@ module.exports = {
             return `/assets/media/${subdir}/${filename}`
         }
         return filename
+    },
+
+    randomItem: function(arr) {
+        return arr[random(arr.length - 1)]
     }
 }
