@@ -1,13 +1,14 @@
 const config = require('./_config.json')
 const gulp = require('gulp')
 const rename = require('gulp-rename')
-const uglify = require('gulp-uglify')
+const terser = require('gulp-terser')
 const webpack = require('webpack-stream')
 
 const webpackConfig = {
     entry: {
         main: `./${config.assetSrc}/scripts/main.js`,
-        webmentions: `./${config.assetSrc}/scripts/webmentions/index.js`
+        webmentions: `./${config.assetSrc}/scripts/webmentions/index.js`,
+        sharer: `./${config.assetSrc}/scripts/sharer/index.js`
     },
     output: {
         filename: '[name].js'
@@ -38,7 +39,7 @@ gulp.task('scripts', function() {
     return gulp
         .src(config.assetSrc + '/scripts/main.js')
         .pipe(webpack(webpackConfig))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(config.assetDest + '/js'))
 })
