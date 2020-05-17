@@ -89,8 +89,8 @@ async function postFile(params) {
         message: 'new shared note',
         content: buffer.toString('base64'),
         committer: {
-            name: 'Max Böck',
-            email: 'hello@mxb.dev'
+            name: 'Apurv Mishra',
+            email: 'me@apurvmishra.xyz'
         }
     }
 
