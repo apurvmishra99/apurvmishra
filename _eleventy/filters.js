@@ -41,9 +41,8 @@ module.exports = {
 
     isOwnWebmention: function(webmention) {
         const urls = [
-            'https://mxb.at',
-            'https://mxb.dev',
-            'https://twitter.com/mxbck'
+            'https://apurvmishra.xyz',
+            'https://twitter.com/apurv_mishra99'
         ]
         const authorUrl = webmention.author ? webmention.author.url : false
         // check if a given URL is part of this site.
@@ -96,8 +95,8 @@ module.exports = {
 
     webmentionCountByType: function(webmentions, url, ...types) {
         const isUrlMatch = entry =>
-            entry['wm-target'] === url ||
-            entry['wm-target'] === url.replace('mxb.dev', 'mxb.at')
+            entry['wm-target'] === url
+            
 
         return String(
             webmentions
