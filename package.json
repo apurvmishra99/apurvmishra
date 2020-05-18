@@ -4,8 +4,8 @@
   "description": "Personal Website of Apurv Mishra",
   "scripts": {
     "start": "gulp build:dev",
-    "build": "NODE_ENV=production gulp build && yarn run build:lambda",
-    "debug": "DEBUG=Eleventy* yarn start",
+    "build": "NODE_ENV=production gulp build && npm run build:lambda",
+    "debug": "DEBUG=Eleventy* npm start",
     "serve": "gulp serve",
     "serve:lambda": "netlify-lambda serve _lambda",
     "build:lambda": "netlify-lambda build _lambda"

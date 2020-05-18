@@ -1,11 +1,11 @@
 [build]
-    command = "yarn run build"
+    command ="npm run build"
     publish = "dist"
-    functions = "functions"
+    functions = "_lambda-build"
 
 [build.environment]
     NODE_VERSION = "10.15"
-    YARN_VERSION = "1.21.1"
+    NPM_VERSION = "6.10.2"
 
 [[headers]]
     for = "/*"
