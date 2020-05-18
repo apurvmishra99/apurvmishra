@@ -10,8 +10,7 @@
         color: inherit;
 
         &--draft {
-            color: $brand-color-secondary;
-            color: var(--brand-color-secondary);
+            color: var(--color-secondary);
 
             .otherposts__title::after {
                 content: '(Draft)';
@@ -38,15 +37,14 @@
 
     &__date {
         display: block;
-        color: $text-color-secondary;
-        color: var(--text-color-secondary);
+        color: var(--color-text-offset);
         font-size: 0.75em;
         white-space: nowrap;
 
         @include mq(md) {
             padding-right: 1rem;
-            width: 125px;
-            flex: 0 0 125px;
+            width: 7.25rem;
+            flex: 0 0 7.25rem;
             order: -1;
         }
     }

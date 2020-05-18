@@ -1,10 +1,12 @@
 import 'focus-visible'
-import 'svgxuse'
 
 import './inc/polyfills'
 import './inc/navigation'
 import './inc/responsiveImage'
-import './inc/darkmode'
+import './inc/lazyload'
+import './inc/themepicker'
 import './inc/infinitescroll'
 import './inc/preload'
 import './inc/register-serviceworker'
+
+document.documentElement.classList.remove('no-js')

@@ -16,8 +16,7 @@
             content: '';
             display: block;
             height: 5px;
-            background-color: $border-color;
-            background-color: var(--border-color);
+            background-color: var(--color-border);
             position: absolute;
             left: 1.25rem;
             right: 1.25rem;
@@ -35,13 +34,11 @@
         // Current Page Active Item
         &--active {
             &::after {
-                background-color: $brand-color-primary !important;
-                background-color: var(--brand-color-primary) !important;
+                background-color: var(--color-primary) !important;
                 transform: none;
             }
             > a {
-                color: $text-color;
-                color: var(--text-color);
+                color: var(--color-text);
             }
         }
     }
@@ -56,13 +53,11 @@
         line-height: 1;
         white-space: nowrap;
         text-transform: lowercase;
-        color: $text-color;
-        color: var(--text-color);
+        color: var(--color-text);
         transition: color 0.2s linear;
 
         @include hover-focus {
-            color: $text-color;
-            color: var(--text-color);
+            color: var(--color-text);
         }
     }
 
@@ -76,53 +71,6 @@
     // Toggle Button
     &__togglebtn {
         display: none;
-        align-items: center;
-        width: 3rem;
-        height: 3rem;
-
-        position: fixed;
-        z-index: z('nav') + 1;
-        right: 5%;
-
-        border: 0;
-        padding: 0;
-        border-radius: 50%;
-        background-color: $bg-color-semitransparent;
-        background-color: var(--bg-color-semitransparent);
-    }
-
-    // Darkmode Button
-    &__darkmodebtn {
-        @include button-reset;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 1.75;
-        height: 1.75;
-        margin-left: 2rem;
-        color: $text-color;
-        color: var(--text-color);
-
-        @supports (color: var(--fake-var)) {
-            display: flex;
-        }
-
-        .icon--sun {
-            display: none;
-            transform: scale(1.1);
-        }
-        .icon--moon {
-            display: block;
-        }
-
-        .theme-dark & {
-            .icon--sun {
-                display: block;
-            }
-            .icon--moon {
-                display: none;
-            }
-        }
     }
 
     // ==================================
@@ -165,25 +113,14 @@
                 right: 70%;
                 height: 10px;
                 bottom: 15%;
-                background-color: $gray;
-            }
-
-            &--active > a {
-                color: #fff;
-            }
-            &--active .nav__num {
-                color: $gray;
+                background-color: var(--color-text-offset);
             }
         }
 
         &__link {
             padding: 1.5rem;
             text-transform: none;
-            color: $gray-light;
-
-            @include hover-focus {
-                color: #fff;
-            }
+            color: #fff !important;
         }
 
         &__num {
@@ -191,27 +128,13 @@
             font-family: $font-family-base;
             font-weight: 300;
             font-size: 0.5em;
-            color: $gray;
+            color: var(--color-text-offset);
         }
 
         &__togglebtn {
             display: flex;
-            top: 2.625rem;
-        }
-
-        &__darkmodebtn {
-            margin-left: 0;
-            margin-right: 5rem;
-        }
-    }
-
-    // ==================================
-    // MOBILE VERSION (PHONE ONLY)
-    // ==================================
-
-    @include mq-down(md) {
-        &__togglebtn {
-            top: 1.5rem;
+            position: relative;
+            z-index: z('nav') + 1;
         }
     }
 }
@@ -253,7 +176,7 @@
 .nav__bg {
     position: fixed;
     z-index: z('nav') - 1;
-    top: 25px;
+    top: 16px;
     right: 5%;
     height: 4px;
     width: 4px;
@@ -276,7 +199,7 @@
 
         border-radius: 50%;
         backface-visibility: hidden;
-        background-color: darken($gray-darkest, 5%);
+        background-color: #000;
 
         transform: scale(0);
         transform-origin: 50% 50%;
@@ -285,7 +208,7 @@
     }
 
     @include mq(md) {
-        top: 42px;
+        top: 50px;
     }
     @include mq(lg) {
         display: none;
@@ -301,10 +224,10 @@
     width: 24px;
     height: 16px;
     position: relative;
-    transform: rotate(0deg);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
     margin: 0 auto;
+    transform: translate(0, -1px) rotate(0deg);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &__bar {
         display: block;
@@ -330,7 +253,7 @@
 
     // Animate to "X" when Nav is open
     .nav--open & {
-        transform: rotate(270deg);
+        transform: translate(-1px, 0) rotate(270deg);
 
         .menuicon__bar {
             &:nth-child(1),

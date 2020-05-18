@@ -1,7 +1,7 @@
 import { h, Component } from 'preact'
 import { DateTime } from 'luxon'
 
-const readableDate = iso => {
+const readableDate = (iso) => {
     const date = new Date(iso)
     return DateTime.fromJSDate(date).toFormat('dd LLL yyyy - HH:mm')
 }
@@ -13,13 +13,19 @@ export default class Webmention extends Component {
         const avatar = author.photo ? (
             <img
                 className="webmention__author__photo u-photo"
-                src={author.photo}
+                src={defaultAvatarSrc}
+                data-src={author.photo}
                 alt={author.name}
+                width={48}
+                height={48}
+                loading="lazy"
             />
         ) : (
             <img
                 className="webmention__author__photo"
                 src={defaultAvatarSrc}
+                width={48}
+                height={48}
                 alt=""
             />
         )
@@ -49,8 +55,9 @@ export default class Webmention extends Component {
     render({ id, author, published, content }) {
         const classNames = ['webmention']
         const ownDomains = [
-            'https://apurvmishra.xyz',
-            'https://twitter.com/apurv_mishra99'
+            'https://mxb.at',
+            'https://mxb.dev',
+            'https://twitter.com/mxbck'
         ]
         if (ownDomains.includes(author.url)) {
             classNames.push('webmention--own')

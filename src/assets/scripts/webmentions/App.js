@@ -4,17 +4,26 @@ import Webmention from './Webmention'
 import Icon from './Icon'
 
 export default class App extends Component {
-    renderMentionsHeader(webmentions) {
-        const faces = webmentions.slice(0, 5).map(entry => {
-            const imgSrc =
-                entry.author.photo || '/assets/images/avatar-default.jpg'
+    componentDidMount() {
+        if (window.initLazyLoad && typeof window.initLazyLoad === 'function') {
+            window.initLazyLoad()
+        }
+    }
+
+    renderMentionsHeader(webmentions, likeCount) {
+        const faces = webmentions.slice(0, 5).map((entry) => {
+            const defaultAvatarSrc = '/assets/images/avatar-default.jpg'
+            const imgSrc = entry.author.photo || defaultAvatarSrc
             return (
                 <img
                     key={entry['wm-id']}
                     className="webmentions__faces__img"
-                    src={imgSrc}
+                    src={defaultAvatarSrc}
+                    data-src={imgSrc}
                     title={entry.author.name}
                     alt=""
+                    width={32}
+                    height={32}
                 />
             )
         })
@@ -27,8 +36,18 @@ export default class App extends Component {
         }
         return (
             <div className="webmentions__header">
-                <a href="#webmentions" class="webmentions__toggle">
-                    <Icon name="message" /> Show All ({webmentions.length})
+                <span
+                    className="webmentions__metric"
+                    aria-label={`${likeCount} Likes`}
+                >
+                    <Icon name="heart" /> {likeCount}
+                </span>
+                <a
+                    href="#webmentions"
+                    className="webmentions__metric"
+                    aria-label={`${webmentions.length} Mentions, show all`}
+                >
+                    <Icon name="message" /> {webmentions.length} (Show All)
                 </a>
                 <div className="webmentions__faces">{faces}</div>
                 <a
@@ -47,7 +66,7 @@ export default class App extends Component {
     renderMentionsList(webmentions) {
         return (
             <ol className="webmentions__list">
-                {webmentions.map(item => {
+                {webmentions.map((item) => {
                     const {
                         'wm-id': id,
                         url,
@@ -71,14 +90,14 @@ export default class App extends Component {
         )
     }
 
-    render({ webmentions }) {
+    render({ webmentions, likeCount }) {
         if (!webmentions.length) {
-            return <p>No webmentions yet.</p>
+            return <p className="webmentions__empty">No webmentions yet.</p>
         }
 
         return (
             <div data-rendered>
-                {this.renderMentionsHeader(webmentions)}
+                {this.renderMentionsHeader(webmentions, likeCount)}
                 <div className="webmentions__content">
                     {this.renderMentionsList(webmentions)}
                 </div>

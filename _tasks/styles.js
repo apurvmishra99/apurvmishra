@@ -3,9 +3,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
-const rename = require('gulp-rename')
 const cleanCSS = require('gulp-clean-css')
-const browserslist = require('../package.json').browserslist
 
 require('dotenv').config()
 
@@ -24,11 +22,6 @@ function devStyles() {
                 outputStyle: 'expanded'
             }).on('error', sass.logError)
         )
-        .pipe(
-            autoprefixer({
-                browsers: browserslist
-            })
-        )
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(styleConfig.dest))
 }
@@ -42,17 +35,12 @@ function prodStyles() {
                 outputStyle: 'expanded'
             }).on('error', sass.logError)
         )
-        .pipe(
-            autoprefixer({
-                browsers: browserslist
-            })
-        )
+        .pipe(autoprefixer())
         .pipe(cleanCSS())
-        .pipe(rename({ extname: '.min.css' }))
         .pipe(gulp.dest(styleConfig.dest))
 }
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
     if (process.env.NODE_ENV !== 'production') {
         return devStyles()
     } else {

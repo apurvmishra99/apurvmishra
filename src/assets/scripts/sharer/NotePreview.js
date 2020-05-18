@@ -6,7 +6,7 @@ export default class NotePreview extends Component {
         const { title, url, via, body } = this.props
         const content = []
 
-        const handleLink = handle => {
+        const handleLink = (handle) => {
             if (handle.charAt(0) === '@') {
                 return (
                     <a href={`https://twitter.com/${handle.substring(1)}`}>
@@ -21,7 +21,11 @@ export default class NotePreview extends Component {
         ) : null
 
         if (title.trim().length) {
-            content.push(<h2 key="n-title">{title}</h2>)
+            content.push(
+                <h2 key="n-title" className="note__title">
+                    {title}
+                </h2>
+            )
         }
 
         if (body || via) {
@@ -52,7 +56,7 @@ export default class NotePreview extends Component {
 
         return (
             <div className="note__meta">
-                <p className="note__author">
+                <p className="note__author" hidden>
                     <span className="note__author__link">
                         <img
                             className="note__author__photo"
@@ -61,9 +65,6 @@ export default class NotePreview extends Component {
                         <strong className="note__author__name">Max Böck</strong>
                     </span>
                 </p>
-                <span className="note__meta__divider" aria-hidden="true">
-                    &sdot;
-                </span>
                 <time className="note__date">{dateString}</time>
                 <div className="note__tags">
                     <span className="note__tag">link</span>

@@ -1,0 +1,23 @@
+<div class="themepicker js-themepicker" data-nosnippet hidden>
+    <h3 class="themepicker__title">Select Theme</h3>
+    <ul class="themepicker__list" id="theme-menu">
+    {% for theme in themes %}
+        <li class="themepicker__item">
+            <button class="themepicker__btn js-themepicker-themeselect" data-theme-id="{{ theme.id }}" style="background-color: {{ theme.colors.background }}">
+                <span class="themepicker__name" style="color: {{ theme.colors.text }}">{{ theme.name }}</span>
+                <span class="themepicker__palette">
+                    <span class="themepicker__hue" style="background-color: {{ theme.colors.primary }}">{{ theme.colors.primary }}</span>
+                    <span class="themepicker__hue" style="background-color: {{ theme.colors.secondary }}">{{ theme.colors.secondary }}</span>
+                    <span class="themepicker__hue" style="background-color: {{ theme.colors.border }}">{{ theme.colors.border }}</span>
+                    <span class="themepicker__hue" style="background-color: {{ theme.colors.textOffset }}">{{ theme.colors.textOffset }}</span>
+                    <span class="themepicker__hue" style="background-color: {{ theme.colors.text }}">{{ theme.colors.text }}</span>
+                </span>
+            </button>
+        </li>
+    {% endfor %}
+    </ul>
+    <button class="iconbtn themepicker__close js-themepicker-close">
+        <span class="sr-only">close themepicker</span>
+        {% icon "close" %}
+    </button>
+</div>

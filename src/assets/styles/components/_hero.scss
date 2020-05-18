@@ -25,7 +25,7 @@
     }
     &__pretitle {
         order: -1;
-        font-size: 0.875rem;
+        font-size: 1.1875rem; //19px
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 1px;
@@ -72,13 +72,11 @@
         }
 
         &::before {
-            background-color: $border-color;
-            background-color: var(--border-color);
+            background-color: var(--color-border);
         }
 
         &::after {
-            background-color: $brand-color-primary;
-            background-color: var(--brand-color-primary);
+            background-color: var(--color-primary);
             transform: scaleX(0);
             transform-origin: 0 50%;
             transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
@@ -88,8 +86,8 @@
             transform: scaleX(1);
         }
 
-        &--simpleloop::after {
-            background-color: $simpleloop-brand-primary;
+        &--codista::after {
+            background-color: $codista-brand-primary;
         }
         &--twitter::after {
             background-color: $twitter-brand-primary;

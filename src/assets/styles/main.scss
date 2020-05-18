@@ -16,7 +16,6 @@
 //--------------------
 
 @import 'base/fonts';
-@import 'base/properties';
 @import 'base/normalize';
 @import 'base/reboot';
 @import 'base/layout';
@@ -48,4 +47,15 @@
 @import 'components/webmention';
 @import 'components/responsive-image';
 @import 'components/blogroll';
-@import 'components/background-pattern';
+@import 'components/alert';
+@import 'components/spinner';
+@import 'components/sharer';
+@import 'components/themepicker';
+@import 'components/map';
+
+//--------------------
+// VENDOR
+// third-party styles
+//--------------------
+
+@import 'vendor/leaflet';

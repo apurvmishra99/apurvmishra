@@ -1,6 +1,5 @@
 .form {
     width: 100%;
-    margin: 2rem 0;
 
     &__fields {
         display: grid;
@@ -29,8 +28,8 @@
     &__input {
         display: block;
         width: 100%;
-        background-color: $gray-lightest;
-        border: 1px solid $gray;
+        background-color: var(--color-bg-offset);
+        border: 1px solid var(--color-text-offset);
         font-size: 1rem;
         font-weight: 500;
         padding: 0.5rem 1rem;
@@ -44,5 +43,6 @@
     }
     &__actions {
         text-align: right;
+        overflow: hidden;
     }
 }

@@ -1,0 +1,41 @@
+---
+permalink: '/assets/css/theme.css'
+excludeFromSitemap: true
+---
+{% macro colorscheme(colors) %}
+    --color-bg: {{ colors.background }};
+    --color-bg-offset: {{ colors.backgroundOffset }};
+    --color-text: {{ colors.text }};
+    --color-text-offset: {{ colors.textOffset }};
+    --color-border: {{ colors.border }};
+    --color-primary: {{ colors.primary }};
+    --color-primary-offset: {{ colors.primaryOffset }};
+    --color-secondary: {{ colors.secondary }};
+{% endmacro %}
+
+{%- set default = themes|getTheme('default') -%}
+{%- set dark = themes|getTheme('dark') -%}
+
+:root {
+    {{ colorscheme(default.colors) }}
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        {{ colorscheme(dark.colors) }}
+    }
+}
+
+{% for theme in themes %}
+html[data-theme='{{ theme.id }}'] {
+    {{ colorscheme(theme.colors) }}
+}
+{% endfor %}
+
+html[data-theme='rainbow'] body {
+    background-image: url("/assets/images/stars.gif");
+    text-shadow: 0 0 2px;
+}
+html[data-theme='rainbow'] h1 {
+    text-shadow: 0 0 5px, 0 0 9px, 0 0 11px;
+}

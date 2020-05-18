@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
@@ -7,18 +8,26 @@ const markdownItAnchor = require('markdown-it-anchor')
 
 const filters = require('./_eleventy/filters.js')
 const shortcodes = require('./_eleventy/shortcodes.js')
-
-require('dotenv').config()
 const isProduction = process.env.NODE_ENV === 'production'
 
-module.exports = function(config) {
+const anchorSlugify = (s) =>
+    encodeURIComponent(
+        'h-' +
+            String(s)
+                .trim()
+                .toLowerCase()
+                .replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g, '')
+                .replace(/\s+/g, '-')
+    )
+
+module.exports = function (config) {
     // Filters
-    Object.keys(filters).forEach(filterName => {
+    Object.keys(filters).forEach((filterName) => {
         config.addFilter(filterName, filters[filterName])
     })
 
     // Shortcodes
-    Object.keys(shortcodes).forEach(shortCodeName => {
+    Object.keys(shortcodes).forEach((shortCodeName) => {
         config.addShortcode(shortCodeName, shortcodes[shortCodeName])
     })
 
@@ -53,46 +62,38 @@ module.exports = function(config) {
             permalinkClass: 'heading-anchor',
             permalinkBefore: true,
             level: 2,
-            slugify: s =>
-                encodeURIComponent(
-                    'h-' +
-                        String(s)
-                            .trim()
-                            .toLowerCase()
-                            .replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g, '')
-                            .replace(/\s+/g, '-')
-                )
+            slugify: anchorSlugify
         })
     )
 
     // Collections: Navigation
-    config.addCollection('nav', function(collection) {
-        return collection.getFilteredByTag('nav').sort(function(a, b) {
+    config.addCollection('nav', function (collection) {
+        return collection.getFilteredByTag('nav').sort(function (a, b) {
             return a.data.navorder - b.data.navorder
         })
     })
 
     // Collections: Posts
-    config.addCollection('posts', function(collection) {
+    config.addCollection('posts', function (collection) {
         const pathsRegex = /\/posts\/|\/drafts\//
         return collection
             .getAllSorted()
-            .filter(item => item.inputPath.match(pathsRegex) !== null)
-            .filter(item => item.data.permalink !== false)
-            .filter(item => !(item.data.draft && isProduction))
+            .filter((item) => item.inputPath.match(pathsRegex) !== null)
+            .filter((item) => item.data.permalink !== false)
+            .filter((item) => !(item.data.draft && isProduction))
     })
 
     // Collections: Notes
-    config.addCollection('notes', function(collection) {
+    config.addCollection('notes', function (collection) {
         return collection
             .getAllSorted()
-            .filter(item => item.inputPath.match(/\/notes\//) !== null)
+            .filter((item) => item.inputPath.match(/\/notes\//) !== null)
             .reverse()
     })
 
     // Minify HTML Output
-    config.addTransform('htmlmin', function(content, outputPath) {
-        if (outputPath.endsWith('.html') && isProduction) {
+    config.addTransform('htmlmin', function (content, outputPath) {
+        if (outputPath && outputPath.endsWith('.html') && isProduction) {
             return htmlmin.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,

@@ -2,7 +2,7 @@
 
     {# Menu Toggle Button #}
     <button
-        class="nav__togglebtn js-nav-toggle"
+        class="iconbtn nav__togglebtn js-nav-toggle"
         aria-expanded="false"
         aria-controls="nav-menu"
         aria-label="toggle menu"
@@ -20,7 +20,7 @@
         <ul class="nav__menu js-nav-menu" id="nav-menu">
         {%- for nav in collections.nav -%}
             {%- set isCurrent = (nav.url == page.url) -%}
-            {%- set isParent = nav.url != '/' and nav.url in page.url -%}
+            {%- set isParent = nav.url != '/' and page.url and nav.url in page.url -%}
 		    <li class="nav__item{% if isCurrent or isParent %} nav__item--active{% endif %}">
                 <a
                     href="{% if isCurrent %}#main{% else %}{{ nav.url | url }}{% endif %}"
@@ -34,21 +34,9 @@
         {%- endfor -%}
         </ul>
     </div>
-
-    {# Dark Mode Switch #}
-    <button
-        class="nav__darkmodebtn js-darkmode-toggle"
-        title="Toggle Dark Mode"
-        role="switch"
-        aria-checked="false"
-    >
-        {% icon "moon" %}
-        {% icon "sun" %}
-        <span class="sr-only">Toggle Dark Mode</span>
-    </button>
-
+    
     {# Menu BG Animation #}
-    <div class="nav__bg theme-dark">
+    <div class="nav__bg">
         <div class="nav__bg__circle"></div>
     </div>
 
