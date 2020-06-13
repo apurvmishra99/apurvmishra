@@ -55,9 +55,8 @@ export default class Webmention extends Component {
     render({ id, author, published, content }) {
         const classNames = ['webmention']
         const ownDomains = [
-            'https://mxb.at',
-            'https://mxb.dev',
-            'https://twitter.com/mxbck'
+            'https://apurvmishra.xyz/',
+            'https://twitter.com/apurv_mishra99'
         ]
         if (ownDomains.includes(author.url)) {
             classNames.push('webmention--own')
