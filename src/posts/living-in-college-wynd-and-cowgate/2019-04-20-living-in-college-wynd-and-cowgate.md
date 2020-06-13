@@ -1,7 +1,7 @@
 ---
 title: Living in College Wynd and Cowgate
 tags: ["life", "college wynd", "edinburgh"]
-image: "{{ leith1.jpg }}"
+image: leith1.jpg
 description: 'My experience at my first year accommodation, College Wynd'
 ---
 <p class='lead'> I chose to stay at College Wynd for my first year at The University of Edinburgh, and to say the least it was great fun.</p>

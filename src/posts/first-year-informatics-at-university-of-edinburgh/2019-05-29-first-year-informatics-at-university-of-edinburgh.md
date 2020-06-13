@@ -1,7 +1,7 @@
 ---
 title: First year informatics @ University of Edinburgh
 tags: ["life", "computer science", "university of edinburgh", "uoe", "informatics", "academics"]
-image: "{{ ATNight.jpg }}"
+image: ATNight.jpg
 description: 'First year informtics course structure and tips'
 ---
 

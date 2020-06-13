@@ -29,6 +29,12 @@
     status = 301
     force = true
 
+[[redirects]]
+    from = "https://apurvmishra.xyz"
+    to = "https://apurvmishra.xyz/"
+    status = 301
+    force = true
+
 # Bots
 [[redirects]]
     from = "/wp-login.php"
