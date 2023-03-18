@@ -41,7 +41,7 @@
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.29.0",
     "critical": "^5.0.4",
     "del": "^5.1.0",
     "dotenv": "^8.2.0",
