@@ -1,11 +1,12 @@
 [build]
-    command ="npm run build"
+    command = "npm run build"
     publish = "dist"
     functions = "_lambda-build"
 
 [build.environment]
-    NODE_VERSION = "10.15"
-    NPM_VERSION = "6.10.2"
+    # Update Node.js to a modern version that fully supports ES modules
+    NODE_VERSION = "18.19.0"    # Changed from "10.15"
+    NPM_VERSION = "10.2.3"      # Updated from "6.10.2" to match Node 18
 
 [[headers]]
     for = "/*"
@@ -13,7 +14,7 @@
         X-Frame-Options = "DENY"
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
-        Referrer-Policy= "no-referrer-when-downgrade"
+        Referrer-Policy = "no-referrer-when-downgrade"
 
 # Netlify subdomain
 [[redirects]]
@@ -21,7 +22,6 @@
     to = "https://apurvmishra.xyz/:splat"
     status = 301
     force = true
-
 
 [[redirects]]
     from = "https://www.apurvmishra.xyz/*"
